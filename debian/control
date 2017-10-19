@@ -1,0 +1,8 @@
+Package: deb-cpp-test
+Version: 0.1-1
+Section: base
+Priority: optional
+Architecture: all
+Depends: gawk
+Maintainer: Foundation Squad <foundation@algolia.com>
+Description: test package
