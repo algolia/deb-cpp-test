@@ -1,7 +1,7 @@
 NAME		= deb-cpp-test
 
 SRC		= main.cpp
-OBJ		= $(SRC:.c=.o)
+OBJ		= $(SRC:.cpp=.o)
 
 CC		= g++
 CXXFLAGS	= -Wall -Werror
@@ -11,8 +11,8 @@ all:		build $(NAME)
 build:
 	mkdir -p build
 
-%.o:	%.cpp
-	$(CC) -c $(CXXFLAGS) $(OBJ)
+obj/%.o:	%.cpp
+	$(CC) -c $(CXXFLAGS) $<
 
 deb-cpp-test:	$(OBJ)
 	$(CC) $(CXXFLAGS) -o build/$(NAME) $(OBJ)
