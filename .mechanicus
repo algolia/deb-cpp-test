@@ -1,3 +1,4 @@
 language: Cpp
+tags_only: true
 build:
   prebuild: CMake
